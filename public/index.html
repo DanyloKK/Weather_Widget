@@ -6,55 +6,65 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Widget</title>
-    <link rel="stylesheet" href="../styles/My.css">
+    <link rel="stylesheet" href="../styles/Widget.css">
 </head>
 <body>
-<div class="widget">
+<div class="widget widget--light">
     <div class="widget-data__auxiliary">
-        <h1>Thursday</h1>
-        <h2>2024 Juny 27</h2>
-        <img src="../src/assets/img/5546263%201.png" alt="weather">
-        <p>29°C </p>
-        <p>Mostly cloudy</p>
+        <h1 class="widget-day widget-day--blue">Thursday</h1>
+        <h2 class="widget-full__data widget-full__data--light">2024 Juny 27</h2>
+        <img class="widget-weather__pic" src="../src/assets/img/5546263%201.png" alt="weather">
+        <p class="widget-temperature widget-temperature--hot">29°C</p>
+        <p class="widget-weather widget-weather--cloudy">Mostly cloudy</p>
     </div>
     <div class="widget-data__main">
-        <div>
-            <form>
-                <input type="text" placeholder="Search location...">
-                <button type="submit">Search</button>
-            </form>
-            <p>Polonnaruwa,Sri Lanka</p>
-        </div>
-        <div>
-            <p>31°C<span>Max temperature</span></p>
-            <p>25°C<span>Min temperature</span></p>
-        </div>
-        <div>
-            <ul>
-                <li>37</li>
-                <li>Feels like</li>
-                <li>
-                    <img src="" alt="temperature">
-                </li>
-            </ul>
-            <ul>
-                <li>45%</li>
-                <li>Humidity</li>
-                <li>
-                    <img src="" alt="humidity">
-                </li>
-            </ul>
-            <ul>
-                <li>5 m/s</li>
-                <li>Wind</li>
-                <li>
-                    <img src="" alt="wind_speed">
-                </li>
-            </ul>
-        </div>
+        <search class="widget-search" role="search">
+            <form class="widget-search__form">
+                <div class="widget-block">
+                    <input class="widget-input widget-input--color" type="text" placeholder="Search location...">
+                </div>
+                <button class="widget-button widget-button--color" type="submit">Search</button>
 
+            </form>
+        </search>
+        <p class="widget-location widget-location--highlighted">Polonnaruwa, <span>Sri Lanka</span></p>
+        <div class="widget-temperature__data">
+            <div class="widget-temperature--block">
+                <p class="widget-temperature--max widget-temperature--max_color widget-temperature--common">31°C</p>
+                <span class="widget-temperature--inscription widget-temperature--inscription_color">Max temperature</span>
+            </div>
+            <div class="widget-temperature--block">
+                <p class="widget-temperature--min widget-temperature--min_color widget-temperature--common">25°C</p>
+                <span class="widget-temperature--inscription widget-temperature--inscription_color">Min temperature</span>
+            </div>
+        </div>
+        <div class="widget-weather__feel">
+            <ul class="widget-weather__list widget-weather__list--dark">
+                <li class="widget-weather__item weather-list__item widget-weather--color">37</li>
+                <li class="widget-weather__condition weather-list__item widget-weather--color">Feels like</li>
+                <li class="widget-weather__picture weather-list__item">
+                    <img src="../src/assets/svg/Group.svg" alt="temperature">
+                </li>
+            </ul>
+            <ul class="widget-weather__list widget-weather__list--light">
+                <li class="widget-weather__item weather-list__item widget-weather--color">45%</li>
+                <li class="widget-weather__condition weather-list__item widget-weather--color">Humidity</li>
+                <li class="widget-weather__picture weather-list__item">
+                    <img src="../src/assets/svg/Vector.svg" alt="humidity">
+                </li>
+            </ul>
+            <ul class="widget-weather__list widget-weather__list--dark">
+                <li class="widget-weather__item weather-list__item widget-weather--color">5 m/s</li>
+                <li class="widget-weather__condition weather-list__item widget-weather--color">Wind</li>
+                <li class="widget-weather__picture weather-list__item">
+                    <img src="../src/assets/svg/Page-1.svg" alt="wind_speed">
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
+
+
 <script src="../scripts/index.js"></script>
 </body>
 </html>

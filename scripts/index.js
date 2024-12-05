@@ -1,5 +1,5 @@
 "use strict";
-/*
+
 const lat = 45.657974;
 const lon = 25.601198;
 const apiKey = "64db660f3bcd4fe50dfe661901e547f6";
@@ -69,8 +69,8 @@ setInterval(() => {
     dateLocal()
 }, 1000)
 const currentDate = new Date();
-const dateString = currentDate.toLocaleDateString();``
+const dateString = currentDate.toLocaleDateString();
 resetButton.addEventListener("click", sendRequest)
 sendRequest()
 
- */
+

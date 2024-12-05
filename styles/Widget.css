@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AB";
+  src: url("../src/assets/fonts/ABeeZee-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  height: 100vh;
+  background: url("../src/assets/img/pexels-quang-nguyen-vinh-222549-2148743.png") center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  max-width: 1060px;
+  display: flex;
+  width: 100%;
+}
+
+.widget-data__auxiliary {
+  border: 4px solid #fff5f5;
+  border-radius: 18px;
+  max-width: 404px;
+  width: 100%;
+  padding: 30px 0 23px 0;
+  text-align: center;
+  background: rgba(30, 30, 30, 0.5);
+}
+.widget-data__auxiliary .widget-day {
+  font-size: clamp(35px, 8vw, 70px);
+  font-family: "AB", sans-serif;
+  margin-bottom: 13px;
+  font-weight: 100;
+}
+.widget-data__auxiliary .widget-day--blue {
+  color: #fff;
+}
+.widget-data__auxiliary .widget-full__data {
+  font-family: "AB", sans-serif;
+  font-size: 25px;
+  margin-bottom: 38px;
+  font-weight: 100;
+}
+.widget-data__auxiliary .widget-full__data--light {
+  color: #fff;
+}
+.widget-data__auxiliary .widget-temperature {
+  font-family: "AB", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+}
+.widget-data__auxiliary .widget-temperature--hot {
+  color: #fff;
+}
+.widget-data__auxiliary .widget-weather__pic {
+  margin: 0 0 28px 0;
+}
+.widget-data__auxiliary .widget-weather {
+  font-family: "AB", sans-serif;
+  font-size: 35px;
+  margin: 0 0 13px 0;
+  font-weight: 100;
+}
+.widget-data__auxiliary .widget-weather--cloudy {
+  color: #fff;
+}
+
+.widget-data__main {
+  max-width: 626px;
+  width: 100%;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px 0 0 0;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+  position: relative;
+}
+.widget-data__main .widget-search__form {
+  display: flex;
+  gap: 19px;
+  margin-left: 60px;
+}
+.widget-data__main .widget-search__form .widget-block {
+  max-width: 367px;
+  width: 100%;
+}
+.widget-data__main .widget-search__form .widget-block .widget-input {
+  font-family: "AB", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  padding: 16px 0 16px 22px;
+  font-weight: 100;
+}
+.widget-data__main .widget-search__form .widget-block .widget-input::placeholder {
+  color: #fff;
+}
+.widget-data__main .widget-search__form .widget-block .widget-input--color {
+  background: rgba(255, 255, 255, 0.16);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.widget-data__main .widget-search__form .widget-button {
+  border-radius: 10px;
+  font-family: "AB", sans-serif;
+  font-size: 20px;
+  padding: 16px 28px;
+  font-weight: 100;
+}
+.widget-data__main .widget-search__form .widget-button--color {
+  color: #fff;
+  background: #1396df;
+}
+.widget-data__main .widget-location {
+  margin: 0 0 40px 60px;
+  font-size: 30px;
+  font-family: "AB", sans-serif;
+  font-weight: 100;
+}
+.widget-data__main .widget-location::after {
+  content: "";
+  width: 61px;
+  height: 75px;
+  display: inline-block;
+  background-image: url("../src/assets/svg/location-location-pin-location-icon-transparent-free-png 1.svg");
+  margin: 0 0 0 22px;
+  position: relative;
+  top: 25px;
+}
+.widget-data__main .widget-location--highlighted {
+  color: #fff;
+}
+.widget-data__main .widget-location span {
+  font-size: 40px;
+  font-family: "AB", sans-serif;
+  color: #fff;
+  font-weight: 100;
+}
+.widget-data__main .widget-temperature__data {
+  margin: 0 0 44px 60px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+}
+.widget-data__main .widget-temperature__data .widget-temperature--common {
+  font-size: 35px;
+  font-family: "AB", sans-serif;
+  padding: 20px 20px 19px 22px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+.widget-data__main .widget-temperature__data .widget-temperature--inscription {
+  margin: 15px 0 0 0;
+  font-size: 20px;
+  font-family: "AB", sans-serif;
+  display: block;
+  font-weight: 100;
+}
+.widget-data__main .widget-temperature__data .widget-temperature--inscription_color {
+  color: #fff;
+}
+.widget-data__main .widget-temperature__data .widget-temperature--max_color {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #ff8412;
+  color: #fff;
+  font-weight: 100;
+}
+.widget-data__main .widget-temperature__data .widget-temperature--min_color {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #00cdda;
+  color: #fff;
+  font-weight: 100;
+}
+.widget-data__main .widget-weather__feel {
+  margin: 0 0 0 60px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+}
+.widget-data__main .widget-weather__list {
+  text-align: center;
+}
+.widget-data__main .widget-weather__list .weather-list__item {
+  list-style: none;
+}
+.widget-data__main .widget-weather__list .widget-weather--color {
+  color: #fff;
+}
+.widget-data__main .widget-weather__list .widget-weather__item {
+  font-family: "AB", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+.widget-data__main .widget-weather__list .widget-weather__condition {
+  font-family: "AB", sans-serif;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=Widget.css.map */
